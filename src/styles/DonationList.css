@@ -1,0 +1,59 @@
+.donation-list-container {
+  width: 100%;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  font-family: 'Arial Black', sans-serif;
+  text-shadow: 2px 2px 0 rgba(27, 77, 46, 0.3);
+}
+
+.error-banner {
+  padding: 16px;
+  background: linear-gradient(to bottom, #ffed4e, #ffd700);
+  color: #1b4d2e;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  border-left: 6px solid #1b4d2e;
+  font-weight: 700;
+  font-family: 'Arial Black', sans-serif;
+  box-shadow: 6px 6px 0 rgba(27, 77, 46, 0.15);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  background: rgba(27, 77, 46, 0.2);
+  border-radius: 16px;
+  border: 4px dashed rgba(255, 255, 255, 0.5);
+}
+
+.empty-state p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  font-family: 'Arial Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 rgba(27, 77, 46, 0.3);
+}
+
+.donation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .donation-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
